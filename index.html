@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DESIGN LANGUAGE SYSTEM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./stylesheet_phase1.css">
+  <link rel="stylesheet" href="./theme_v1.css">
+  <link rel="stylesheet" href="./gothamfont.css">
+  <!-- Css Plugins -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./libraries/pagination_js/pagination_js.css">
+  <link rel="stylesheet" href="./libraries/css-progress-wizard-master/css/progress-wizard.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+  <link rel="stylesheet" href="./libraries/bootstrap-multiselect-dropdown/dist/css/bootstrap-multiselect.css">
+  <link rel="stylesheet" href="./libraries/bootstrap-select-1.13.14/dist/css/bootstrap-select.css">
+  <link rel="stylesheet" href="./libraries/flag-icon-css-master/css/flag-icon.css">
+  <!-- End Css Plugins -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="./script_phase1.js"></script> 
+  <script src="./theme.js"></script>
+  <!-- JS Plugins -->
+  <script src="https://kit.fontawesome.com/78e1d6c75e.js" crossorigin="anonymous"></script>
+  <!-- <script src="./libraries/notification-box-notific/notific.js"></script> -->
+  <script src="./libraries/pagination_js/pagination.js "></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="./libraries/bootstrap-multiselect-dropdown/dist/js/bootstrap-multiselect.js"></script>
+  <script src="./libraries/bootstrap-select-1.13.14/dist/js/bootstrap-select.js"></script>
+  <!-- End JS Plugins -->
+  
+</head>
+<body>
+<nav class="navbar fixed-top navbar-light _bg-header"> 
+  <a class="navbar-brand" href="#">
+    <img src="./media/logos/Path 10123.png" width="150" class="d-inline-block align-top" alt="">
+   
+  </a>
+</nav>
+
+<div class="container-fluid" style="margin-top:105px ;">
+
+  <h2 class="mb-5">DLS: COMPONENTS</h2>
+
+   <!-- Buttons -->
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Buttons:
+        </div>
+        <div class="card-body">
+          <label class="_gery-2 _fs-16">Buttons</label>
+          <div>
+            <button type="button" class="btn _rm-btn-lg-00 _primary-button mx-1 mb-2">Primary 1</button>
+            <button type="button" class="btn _btn-secondary mx-1 mb-2 _rm-btn-lg-00">Secondary 1</button>
+          </div>
+          <label class="_gery-2 _fs-16">Disabled Buttons</label>
+          <div>
+            <button type="button" class="btn _rm-btn-lg-00 _primary-button mx-1 mb-2 disabled">Primary 1</button>
+            <button type="button" class="btn _btn-secondary mx-1 mb-2 _rm-btn-lg-00 disabled">Secondary 1</button>
+          </div>
+          
+          <label class="_gery-2 _fs-14">Split Buttons</label>
+          <div class="mb-3">
+              <div class="btn-group _split-btn-dropdown">
+                <button type="button" class="btn _dropdown-toggle-text">Reference</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split px-3" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                  <i class='fas fa-chevron-down'></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                  <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                  
+                </div>
+              </div>
+          </div>
+          <label class="_gery-2 _fs-14">Icon Buttons</label>
+          <div class="mb-3">
+            <button type="button" class="btn _btn-icon _rm-btn-icon-default mb-2 mr-2"><i class='fas fa-plus'></i></button>
+            <button type="button" class="btn _btn-icon _rm-btn-icon-default mb-2 mr-2 disabled"><i class='fas fa-plus'></i></button>
+          </div>
+          <label class="_gery-2 _fs-16">Text Buttons</label>
+          <div class="mb-3">
+            <button type="button" class="btn btn-link _fs-18 mb-2 mr-2">Text Button</button>
+            <button type="button" class="btn btn-link _fs-18  mb-2 mr-2 disabled">Text Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre>
+&ltbutton type="button" class="btn _primary-button mb-1"&gtPrimary&lt/button&gt
+&ltbutton type="button" class="btn _btn-outline-primary mb-1"&gtOutline&lt/button&gt
+&ltbutton type="button" class="btn _btn-icon-default _primary-button mb-1"&gt&lti class='fas fa-plus'&gt&lt/i&gt&lt/button&gt
+&ltbutton type="button" class="btn btn-link"&gtLink&lt/button&gt
+&ltdiv class="btn-group _split-dropdown"&gt
+&ltbutton type="button" class="btn _primary-button _dropdown-text mb-1"&gtSony&lt/button&gt
+&ltbutton type="button" class="btn _primary-button _dropdown-icon mb-1 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"&gt
+&ltspan class="caret"&gt&lt/span&gt
+&lt/button&gt
+&ltdiv class="dropdown-menu"&gt
+&lta class="dropdown-item" href="#"&gtTablet&lt/a&gt
+&lta class="dropdown-item" href="#"&gtSmartphone&lt/a&gt
+&lt/div&gt
+&lt/div&gt  
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>
+  
+  <section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+    <div class="row">
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            Chips
+          </div>
+          <div class="card-body">
+            <p class="_gery-2 _fs-14">Plain Tags</p>
+            <div  class="mb-3">
+              <button class="btn _btn-tags _btn-default-tags">Default</button>
+            </div>
+            <p class="_gery-2 _fs-14">Input Tags</p>
+            <div  class="mb-3">
+              <button class="btn _btn-tags _btn-default-tags"><span class="_btn-tags-text">Default</span><span><i class='fas fa-times-circle'></i></span></button>
+            </div>
+            <p class="_gery-2 _fs-14">Profile Tags</p>
+            <div  class="mb-3">
+              <button class="btn _btn-tags _btn-default-tags _btn-profile-tags">
+                <img class="_tags-image" src="./media/user.png" alt="profile">
+                <span class="_btn-tags-text">Default</span>
+                <span><i class='fas fa-times-circle'></i></span>
+              </button>
+            </div>
+            <p class="_gery-2 _fs-14">Icon tags</p>
+            <div  class="mb-3">
+              <button class="btn _btn-tags _btn-default-tags _btn-profile-tags text-dark">
+                <span><i class='fas fa-user-alt _profile-icon-tags'></i></span>
+                <span class="_btn-tags-text">Default</span>
+                <span><i class='fas fa-times-circle'></i></span>
+              </button>
+            </div>
+            
+            <p class="_gery-2 _fs-14">Brand Tags</p>
+            <div  class="mb-3">
+              <button class="btn _btn-tags _brand-tags _btn-default-tags _tag-default">Default</button>
+              <button class="btn _btn-tags _brand-tags _btn-default-tags _tag_voilet">Default</button>
+              <button class="btn _btn-tags _brand-tags _btn-default-tags _tag-brown">Default</button>
+              <button class="btn _btn-tags _brand-tags _btn-default-tags _tag-purple">Default</button>
+              <button class="btn _btn-tags _brand-tags _btn-default-tags _tag-green">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card">
+          <div class="card-header _bg-code-header text-light">
+            <i class='fas fa-code' style='font-size:16px'></i>
+          </div>
+          <div class="card-body" >
+  <pre style="overflow: auto;">
+  &ltp class="_gery-2 _fs-14"&gtPlain Tags&lt/p&gt
+  &ltdiv  class="mb-3"&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags"&gtDefault&lt/button&gt
+  &lt/div&gt
+  &ltp class="_gery-2 _fs-14"&gtInput Tags&lt/p&gt
+  &ltdiv  class="mb-3"&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags"&gt&ltspan class="_btn-tags-text"&gtDefault&lt/span&gt&ltspan&gt&lti class='fas fa-times-circle'&gt&lt/i&gt&lt/span&gt&lt/button&gt
+  &lt/div&gt
+  &ltp class="_gery-2 _fs-14"&gtProfile Tags&lt/p&gt
+  &ltdiv  class="mb-3"&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _btn-profile-tags"&gt
+  &ltimg class="_tags-image" src="./media/user.png" alt="profile"&gt
+  &ltspan class="_btn-tags-text"&gtDefault&lt/span&gt
+  &ltspan&gt&lti class='fas fa-times-circle'&gt&lt/i&gt&lt/span&gt
+  &lt/button&gt
+  &lt/div&gt
+  &ltp class="_gery-2 _fs-14"&gtIcon tags&lt/p&gt
+  &ltdiv  class="mb-3"&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _btn-profile-tags text-dark"&gt
+  &ltspan&gt&lti class='fas fa-user-alt _profile-icon-tags'&gt&lt/i&gt&lt/span&gt
+  &ltspan class="_btn-tags-text"&gtDefault&lt/span&gt
+  &ltspan&gt&lti class='fas fa-times-circle'&gt&lt/i&gt&lt/span&gt
+  &lt/button&gt
+  &lt/div&gt
+  
+  &ltp class="_gery-2 _fs-14"&gtBrand Tags&lt/p&gt
+  &ltdiv  class="mb-3"&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _tag-default"&gtDefault&lt/button&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _tag_voilet"&gtDefault&lt/button&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _tag-brown"&gtDefault&lt/button&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _tag-purple"&gtDefault&lt/button&gt
+  &ltbutton class="btn _btn-tags _btn-default-tags _tag-green"&gtDefault&lt/button&gt
+  &lt/div&gt
+  
+  </pre>  
+                </div>
+              </div>
+      </div>
+      
+  </div>
+  </section>
+
+
+  <section style="padding-bottom: 32px;border-bottom: 1px dotted;margin-bottom: 32px;">
+    <div class="row">
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">Accordian</div>
+          <div class="card-body">
+            <div class="_accordian" id="accordion">
+              <div class="card">
+                <div class="card-header p-0" id="headingOne">
+                    <div class="_header collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span>What is this term?</span>
+                      <span><i class='fas'></i></span>
+                    </div>
+                </div>
+            
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body _collapse-box">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0" id="headingTwo">
+                    <div class="_header collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span>Why this term?</span>
+                      <span><i class='fas'></i></span>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body _collapse-box">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0" id="headingThree">
+                    <div class="_header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span>How can it be defined?</span>
+                      <span><i class='fas'></i></span>
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body _collapse-box">
+                    The accordion component has two main states: collapsed and expanded. The chevron icon at the end of the accordion indicates which state the accordion is in. The chevron points down to indicate collapsed and up to indicate expanded.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card h-100">
+          <div class="card-header _bg-code-header text-light">
+            <i class='fas fa-code' style='font-size:16px'></i>
+          </div>
+          <div class="card-body" >
+  <pre style="height: 300px;overflow: auto;">
+  &ltdiv class="_accordian" id="accordion"&gt
+  &ltdiv class="card"&gt
+  &ltdiv class="card-header" id="headingOne"&gt
+  &lth5 class="mb-0"&gt
+  &ltdiv class="_header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt
+  &ltspan&gtCollapsible Group Item #1&lt/span&gt
+  &ltspan&gt&lti class='fas fa-chevron-down'&gt&lt/i&gt&lt/span&gt
+  &lt/div&gt
+  &lt/h5&gt
+  &lt/div&gt
+  
+  &ltdiv id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"&gt
+  &ltdiv class="card-body _collapse-box"&gt
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  &lt/div&gt
+  &lt/div&gt
+  &lt/div&gt
+  &ltdiv class="card"&gt
+  &ltdiv class="card-header" id="headingTwo"&gt
+  &lth5 class="mb-0"&gt
+  &ltdiv class="_header collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt
+  &ltspan&gtCollapsible Group Item #2&lt/span&gt
+  &ltspan&gt&lti class='fas fa-chevron-down'&gt&lt/i&gt&lt/span&gt
+  &lt/div&gt
+  &lt/h5&gt
+  &lt/div&gt
+  &ltdiv id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"&gt
+  &ltdiv class="card-body _collapse-box"&gt
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  &lt/div&gt
+  &lt/div&gt
+  &lt/div&gt
+  &ltdiv class="card"&gt
+  &ltdiv class="card-header" id="headingThree"&gt
+  &lth5 class="mb-0"&gt
+  &ltdiv class="_header collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"&gt
+  &ltspan&gtCollapsible Group Item #2&lt/span&gt
+  &ltspan&gt&lti class='fas fa-chevron-down'&gt&lt/i&gt&lt/span&gt
+  &lt/div&gt
+  &lt/h5&gt
+  &lt/div&gt
+  &ltdiv id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion"&gt
+  &ltdiv class="card-body _collapse-box"&gt
+  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  &lt/div&gt
+  &lt/div&gt
+  &lt/div&gt
+  &lt/div&gt
+  
+  </pre>  
+                </div>
+              </div>
+            </div>
+    </div>
+  </section>
+  <section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+    <div class="row">
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            TABS : 1
+          </div>
+          <div class="card-body">
+            <nav>
+              <div class="nav nav-tabs _nav-tabs-hr" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active _fs-16" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Header 1</a>
+                <a class="nav-item nav-link _fs-16" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Header 2</a>
+                <a class="nav-item nav-link _fs-16 _nav-item disabled" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Header 3</a>
+                
+              </div>
+            </nav>
+            <div class="tab-content py-3" id="nav-tabContent">
+              <div class="tab-pane fade show active _fs-14" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed tempor feugiat venenatis. Sed eget nunc imperdiet, lobortis magna ut, bibendum eros.
+              </div>
+              <div class="tab-pane fade  _fs-14" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+                Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+              </div>
+              <div class="tab-pane fade  _fs-14" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                Integer dignissim vulputate gravida. Etiam ac fringilla mauris, 
+                id blandit nunc. Morbi aliquam tortor leo. Fusce sit amet tempor lorem, 
+                sed tincidunt nulla. Morbi convallis nisi leo, vel gravida justo aliquam et. 
+                Nam vitae dui pretium, ultrices libero nec, suscipit arcu.
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card">
+          <div class="card-header _bg-code-header text-light">
+            <i class='fas fa-code' style='font-size:16px'></i>
+          </div>
+          <div class="card-body" >
+<pre style="height: 300px;overflow: auto;">
+
+&ltnav&gt
+&ltdiv class="nav nav-tabs" id="nav-tab" role="tablist"&gt
+&lta class="nav-item nav-link active _fs-18" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"&gtHeader 1&lt/a&gt
+&lta class="nav-item nav-link _fs-18" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"&gtHeader 2&lt/a&gt
+&lta class="nav-item nav-link _fs-18" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"&gtHeader 3&lt/a&gt
+
+&lt/div&gt
+&lt/nav&gt
+&ltdiv class="tab-content py-3" id="nav-tabContent"&gt
+&ltdiv class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"&gt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed tempor feugiat venenatis. Sed eget nunc imperdiet, lobortis magna ut, bibendum eros.
+&lt/div&gt
+&ltdiv class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"&gt
+Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+&lt/div&gt
+&ltdiv class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"&gt
+Integer dignissim vulputate gravida. Etiam ac fringilla mauris, 
+id blandit nunc. Morbi aliquam tortor leo. Fusce sit amet tempor lorem, 
+sed tincidunt nulla. Morbi convallis nisi leo, vel gravida justo aliquam et. 
+Nam vitae dui pretium, ultrices libero nec, suscipit arcu.
+&lt/div&gt
+
+&lt/div&gt
+</pre>  
+                </div>
+              </div>
+            </div>
+        </div>
+  </section>
+
+  <section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+    <div class="row">
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            TABS : 2
+          </div>
+          <div class="card-body">
+            <nav>
+              <div class="nav nav-tabs _nav-tabs-hr _nav-tabs-with-tooltip" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active _fs-16" id="nav-bell-tab"  data-toggle="tab" href="#nav-bell" role="tab" aria-controls="nav-bell" aria-selected="true"><i class='fas fa-bell _fs-20'></i><span class="tooltiptext">Notification</span></a>
+                <a class="nav-item nav-link _fs-16" id="nav-profile-tab" data-toggle="tab" href="#nav-comment" role="tab" aria-controls="nav-comment" aria-selected="false"><i class='fas fa-comment-dots  _fs-20'></i><span class="tooltiptext">Comment</span></a>
+                <a class="nav-item nav-link _fs-16 _nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-likes" role="tab" aria-controls="nav-likes" aria-selected="false"><i class='fas fa-heart  _fs-20'></i><span class="tooltiptext">Wishlist</span></a>
+                <a class="nav-item nav-link _fs-16 _nav-item disabled" id="nav-contact-tab" data-toggle="tab" href="#nav-file" role="tab" aria-controls="nav-file" aria-selected="false"><i class='fas fa-file-alt  _fs-20'></i><span class="tooltiptext">List view</span></a>
+              </div>
+            </nav>
+            <div class="tab-content py-3" id="nav-bell">
+              <div class="tab-pane fade show active _fs-14" id="nav-bell" role="tabpanel" aria-labelledby="nav-bell-tab">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed tempor feugiat venenatis. Sed eget nunc imperdiet, lobortis magna ut, bibendum eros.
+              </div>
+              <div class="tab-pane fade  _fs-14" id="nav-comment" role="tabpanel" aria-labelledby="nav-comment-tab">
+                Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+                Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+              </div>
+              <div class="tab-pane fade  _fs-14" id="nav-likes" role="tabpanel" aria-labelledby="nav-likes-tab">
+                Integer dignissim vulputate gravida. Etiam ac fringilla mauris, 
+                id blandit nunc. Morbi aliquam tortor leo. Fusce sit amet tempor lorem, 
+                sed tincidunt nulla. Morbi convallis nisi leo, vel gravida justo aliquam et. 
+                Nam vitae dui pretium, ultrices libero nec, suscipit arcu.
+              </div>
+              <div class="tab-pane fade  _fs-14" id="nav-file" role="tabpanel" aria-labelledby="nav-file-tab">
+                Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+                Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+              </div>
+              
+            </div>
+
+            <!-- Icon with text -->
+            <hr>
+            <div class="mt-3">
+              <nav>
+                <div class="nav nav-tabs _nav-tabs-hr _nav-tabs-with-text" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-bell-tab"  data-toggle="tab" href="#nav-bell1" role="tab" aria-controls="nav-bell1" aria-selected="true"><i class='fas fa-bell _fs-16 pb-2 text-center'></i><span class="_tabs-help-text _fs-14">Notification</span></a>
+                  <a class="nav-item nav-link _fs-16" id="nav-profile-tab" data-toggle="tab" href="#nav-comment1" role="tab" aria-controls="nav-comment1" aria-selected="false"><i class='fas fa-comment-dots  pb-2 _fs-16 text-center'></i><span class="_tabs-help-text _fs-14">Comment</span></a>
+                  <a class="nav-item nav-link _fs-16 _nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-likes1" role="tab" aria-controls="nav-likes1" aria-selected="false"><i class='fas fa-heart  pb-2 _fs-16 text-center'></i><span class="_tabs-help-text _fs-14">Wishlist</span></a>
+                  <a class="nav-item nav-link _fs-16 _nav-item disabled" id="nav-contact-tab" data-toggle="tab" href="#nav-file1" role="tab" aria-controls="nav-file1" aria-selected="false"><i class='fas fa-file-alt  pb-2 _fs-16 text-center'></i><span class="_tabs-help-text _fs-14">List view</span></a>
+                </div>
+              </nav>
+              <div class="tab-content py-3" id="nav-bell">
+                <div class="tab-pane fade show active _fs-14" id="nav-bell1" role="tabpanel" aria-labelledby="nav-bell1-tab">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Sed tempor feugiat venenatis. Sed eget nunc imperdiet, lobortis magna ut, bibendum eros.
+                </div>
+                <div class="tab-pane fade  _fs-14" id="nav-comment1" role="tabpanel" aria-labelledby="nav-comment1-tab">
+                  Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+                  Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+                </div>
+                <div class="tab-pane fade  _fs-14" id="nav-likes1" role="tabpanel" aria-labelledby="nav-likes1-tab">
+                  Integer dignissim vulputate gravida. Etiam ac fringilla mauris, 
+                  id blandit nunc. Morbi aliquam tortor leo. Fusce sit amet tempor lorem, 
+                  sed tincidunt nulla. Morbi convallis nisi leo, vel gravida justo aliquam et. 
+                  Nam vitae dui pretium, ultrices libero nec, suscipit arcu.
+                </div>
+                <div class="tab-pane fade  _fs-14" id="nav-file1" role="tabpanel" aria-labelledby="nav-file1-tab">
+                  Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+                  Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-md-2 mb-lg-0">
+        <div class="card">
+          <div class="card-header _bg-code-header text-light">
+            <i class='fas fa-code' style='font-size:16px'></i>
+          </div>
+          <div class="card-body" >
+<pre style="height: 300px;overflow: auto;">
+
+&lta class="nav-item nav-link active _fs-16" id="nav-bell-tab"  data-toggle="tab" href="#nav-bell" role="tab" aria-controls="nav-bell" aria-selected="true"&gt&lti class='fas fa-bell'&gt&lt/i&gt&lt/a&gt
+&lta class="nav-item nav-link _fs-16" id="nav-profile-tab" data-toggle="tab" href="#nav-comment" role="tab" aria-controls="nav-comment" aria-selected="false"&gt&lti class='fas fa-comment-dots'&gt&lt/i&gt&lt/a&gt
+&lta class="nav-item nav-link _fs-16 _nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-likes" role="tab" aria-controls="nav-likes" aria-selected="false"&gt&lti class='fas fa-heart'&gt&lt/i&gt&lt/a&gt
+&lta class="nav-item nav-link _fs-16 _nav-item disabled" id="nav-contact-tab" data-toggle="tab" href="#nav-file" role="tab" aria-controls="nav-file" aria-selected="false"&gt&lti class='fas fa-file-alt'&gt&lt/i&gt&lt/a&gt
+</pre>  
+                </div>
+              </div>
+            </div>
+        </div>
+  </section>
+
+  
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted;margin-bottom: 32px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <h5 class="card-header bg-primary text-light">Vertical Tabs</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3 col-lg-2 mb-3 pr-0">
+                  <ul class="nav nav-pills flex-column _vertical-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="vertical-home-tab" data-toggle="tab" href="#vertical-home" role="tab" aria-controls="vertical-home" aria-selected="true">
+                        <span class="mr-2 _fs-16"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="vertical-profile-tab" data-toggle="tab" href="#vertical-profile" role="tab" aria-controls="vertical-profile" aria-selected="false">
+                        <span class="mr-2 _fs-16"><i class="fas fa-user"></i></span>Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="vertical-contact-tab" data-toggle="tab" href="#vertical-contact" role="tab" aria-controls="vertical-contact" aria-selected="false">
+                        <span class="mr-2 _fs-16"><i class="fas fa-address-book"></i></span>Contact</a>
+                    </li>
+                 </ul>
+              </div>
+              <!-- /.col-md-4 -->
+              <div class="col-md-9 col-lg-10 pl-0">
+                <div class="tab-content pb-3 pt-2" id="myTabContent">
+                <div class="tab-pane fade show active" id="vertical-home" role="tabpanel" aria-labelledby="home-tab">
+                  Integer dignissim vulputate gravida. Etiam ac fringilla mauris, 
+                id blandit nunc. Morbi aliquam tortor leo. Fusce sit amet tempor lorem, 
+                sed tincidunt nulla. Morbi convallis nisi leo, vel gravida justo aliquam et. 
+                Nam vitae dui pretium, ultrices libero nec, suscipit arcu.
+                </div>
+                <div class="tab-pane fade" id="vertical-profile" role="tabpanel" aria-labelledby="profile-tab">
+                  Fusce egestas elit libero, tincidunt vestibulum mauris fermentum vitae. 
+                Etiam velit augue, accumsan ut massa at, efficitur eleifend nunc.
+                </div>
+                <div class="tab-pane fade" id="vertical-contact" role="tabpanel" aria-labelledby="contact-tab">
+                  Integer dignissim vulputate gravida. Etiam ac fringilla mauris, 
+                id blandit nunc. Morbi aliquam tortor leo. Fusce sit amet tempor lorem, 
+                sed tincidunt nulla. Morbi convallis nisi leo, vel gravida justo aliquam et. 
+                Nam vitae dui pretium, ultrices libero nec, suscipit arcu.
+                </div>
+                 </div>
+              </div>
+              <!-- /.col-md-8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Wizard
+        </div>
+        <div class="card-body">
+          <div>
+            <ul class="progress-indicator"> 
+              <li class="completed"> 
+                <span class="bubble">
+                  <div class="_wizard-icon-section">
+                    <i class="material-icons _wizard-icons">group</i>
+                  </div>
+                </span> 
+                <p class="_wizard-text mb-2">Personal Details</p> 
+                <p class="_fs-12 text-dark px-2" style="text-transform: capitalize;">Fill your personal details as per govt ID proof</p>
+              </li> 
+              <li class="active"> 
+                <span class="bubble">
+                  <div class="_wizard-icon-section">
+                    <i class='fas fa-book-reader _wizard-icons'></i>
+                  </div>
+                </span>
+                <p class="_wizard-text mb-2">Education Details</p> 
+                <p class="_fs-12 text-dark px-2"  style="text-transform: capitalize;">Fill your educational details as per certificate proof</p>
+            </li> 
+              <li> 
+                <span class="bubble">
+                  <div class="_wizard-icon-section">
+                    <i class='fas fa-book-reader _wizard-icons'></i>
+                  </div>
+                </span>
+                <p class="_wizard-text mb-2">Preview & Submit</p> 
+                <p class="_fs-12 px-2"  style="text-transform: capitalize;">You can preview the entered details here</p>
+              </li> 
+            </ul>
+          </div>
+
+          <!-- <div>
+            <ul class="progress-indicator stacked"> 
+              <li class="completed"> 
+                <span class="bubble">
+                  <div class="_wizard-icon-section">
+                    <i class="material-icons _wizard-icons">group</i>
+                  </div>
+                </span> 
+                <span class="stacked-text">Text Label</span>
+              </li> 
+              <li class="active"> 
+                <span class="bubble">
+                  <div class="_wizard-icon-section">
+                    <i class='fas fa-book-reader _wizard-icons'></i>
+                  </div>
+                </span> 
+                <span class="stacked-text">Text Label</span>
+            </li> 
+              <li> 
+                <span class="bubble">
+                  <div class="_wizard-icon-section">
+                    <i class='fas fa-book-reader _wizard-icons'></i>
+                  </div>
+                </span> 
+                <span class="stacked-text">Text Label</span>
+              </li> 
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv&gt
+&ltul class="progress-indicator"&gt 
+&ltli class="completed"&gt 
+&ltspan class="bubble"&gt
+&ltdiv class="_wizard-icon-section"&gt
+&lti class="material-icons _wizard-icons"&gtgroup&lt/i&gt
+&lt/div&gt
+&lt/span&gt 
+&ltp class="_wizard-text mb-2"&gtPersonal Details&lt/p&gt 
+&ltp class="_fs-12 text-dark px-2"&gtFill your personal details as per govt ID proof&lt/p&gt
+&lt/li&gt 
+&ltli class="active"&gt 
+&ltspan class="bubble"&gt
+&ltdiv class="_wizard-icon-section"&gt
+&lti class='fas fa-book-reader _wizard-icons'&gt&lt/i&gt
+&lt/div&gt
+&lt/span&gt
+&ltp class="_wizard-text mb-2"&gtEducation Details&lt/p&gt 
+&ltp class="_fs-12 text-dark px-2"&gtFill your educational details as per certificate proof&lt/p&gt
+&lt/li&gt 
+&ltli&gt 
+&ltspan class="bubble"&gt
+&ltdiv class="_wizard-icon-section"&gt
+&lti class='fas fa-book-reader _wizard-icons'&gt&lt/i&gt
+&lt/div&gt
+&lt/span&gt
+&ltp class="_wizard-text mb-2"&gtEducation Details&lt/p&gt 
+&ltp class="_fs-12 px-2"&gtFill your educational details as per certificate proof&lt/p&gt
+&lt/li&gt 
+&lt/ul&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section> 
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Modal
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn _rm-btn-lg-00 _primary-button mx-1 mb-2" data-toggle="modal" data-target="#myModal">Open Modal</button>
+          <button type="button" class="btn btn-link _fs-18 mx-1 mb-2" data-toggle="modal" data-target="#myModal1">Large Modal with link</button>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header _modal-header">
+                    <h4 class="modal-title">User license agreement</h4>
+                    <!-- <button type="button" class="close" data-dismiss="modal"></button> -->
+                    <div class="_close" data-dismiss="modal"><i class="material-icons">close</i></div>
+                  
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Be sure of design with proper consistency where they should be efficient, readable, and usable by the user.
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer _modal-footer">
+    
+                  <button type="button" data-dismiss="modal" class="btn _btn-secondary">Close</button>
+                  <button type="button" class="btn _primary-button">Submit</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header _modal-header">
+                    <h4 class="modal-title">User license agreement</h4>
+                    <!-- <button type="button" class="close" data-dismiss="modal"></button> -->
+                    <div class="_close" data-dismiss="modal"><i class="material-icons">close</i></div>
+                  
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Be sure of design with proper consistency where they should be efficient, 
+                  readable, and usable by the user. Size of the component should be consistent in 
+                  way where the user must be able to view it.
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer _modal-footer">
+    
+                  <button type="button" class="btn _btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn _primary-button">Submit</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 300px;overflow: auto;">
+&ltbutton type="button" class="btn _primary-button" data-toggle="modal" data-target="#myModal"&gtOpen Modal&lt/button&gt
+&ltdiv class="modal fade" id="myModal"&gt
+&ltdiv class="modal-dialog modal-dialog-centered"&gt
+&ltdiv class="modal-content"&gt
+
+&lt!-- Modal Header --&gt
+&ltdiv class="modal-header"&gt
+&lth4 class="modal-title"&gtUser license agreement&lt/h4&gt
+&lt!-- &ltbutton type="button" class="close" data-dismiss="modal"&gt&lt/button&gt --&gt
+&ltdiv class="_close" data-dismiss="modal"&gt&lti class='far fa-times-circle'&gt&lt/i&gt&lt/div&gt
+
+&lt/div&gt
+
+&lt!-- Modal body --&gt
+&ltdiv class="modal-body"&gt
+Be sure of design with proper consistency where they should be efficient, 
+readable, and usable by the user. Size of the component should be consistent in 
+way where the user must be able to view it.
+&lt/div&gt
+
+&lt!-- Modal footer --&gt
+&ltdiv class="modal-footer"&gt
+
+&ltbutton type="button" class="btn _btn-outline-primary"&gtClose&lt/button&gt
+&ltbutton type="button" class="btn _primary-button"&gtSubmit&lt/button&gt
+&lt/div&gt
+
+&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+          </div>
+      </div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Plain Cards
+        </div>
+        <div class="card-body">
+          <div class="">
+            <div class="mb-3">
+              <div class="card _card-hoverable" style="width: 18rem;">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text _fs-14">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="card _card-bg-primary _card-hoverable" style="width: 18rem;">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text _fs-14">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre>
+&ltdiv class="card _card-hoverable" style="width: 18rem;"&gt
+&ltdiv class="card-body"&gt
+&lth4 class="card-title"&gtCard title&lt/h4&gt
+&ltp class="card-text _fs-14"&gtSome quick example text to build on the card title and make up the bulk of the card's content.&lt/p&gt
+
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+   
+    
+</div>
+</section>
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Image Cards
+        </div>
+        <div class="card-body">
+          <div class="">
+            
+            <div class="mb-3">
+              <div class="card _card-hoverable" style="width: 18rem;">
+                <img class="card-img-top" src="./media/lala-azizli-2QJV2xF3VSo-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="card _card-hoverable _card-media-left">
+
+                <div class="row no-gutters h-100">
+                  <div class="col-md-6 _card-media-left-image" style="background-image: url('./media/nicola-styles-miKDw28Aqj4-unsplash.jpg');">
+
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h4>Media Top</h4>
+                      <p>Lorem ipsum...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="card _card-hoverable">
+                <div class="card-header bg-transparent">
+                  <h4 class="card-title">Card title</h4>
+                </div>
+                <div class="card-body">Content</div>
+                <div class="card-footer bg-transparent">
+                  <h4 class="card-title">Footer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre>
+&ltdiv class="card _card-hoverable" style="width: 18rem;"&gt
+&ltimg class="card-img-top" src="./media/lala-azizli-2QJV2xF3VSo-unsplash.jpg" alt="Card image cap"&gt
+&ltdiv class="card-body"&gt
+&ltp class="card-text"&gtSome quick example text to build on the card title and make up the bulk of the card's content.&lt/p&gt
+&lt/div&gt
+&lt/div&gt
+&ltdiv class="card _card-hoverable _card-media-left"&gt
+
+&ltdiv class="row no-gutters h-100"&gt
+&ltdiv class="col-md-6 _card-media-left-image" style="background-image: url('./media/nicola-styles-miKDw28Aqj4-unsplash.jpg');"&gt
+
+&lt/div&gt
+&ltdiv class="col-md-6"&gt
+&ltdiv class="card-body"&gt
+&lth4&gtMedia Top&lt/h4&gt
+&ltp&gtLorem ipsum...&lt/p&gt
+&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&lt/div&gt            
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Pagination
+        </div>
+        <div class="card-body">
+          <div>
+            <div id="data-container"></div>
+            <div id="pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv&gt
+&ltdiv id="data-container"&gt&lt/div&gt
+&ltdiv id="pagination"&gt&lt/div&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted;margin-bottom: 32px;">
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">Notifications</div>
+        <div class="card-body">
+          <div class="alert  _alert-informative alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <div class="d-flex align-items-center">
+              <div class="_alert-ico align-self-start">
+                <span class=""><i class="fas fa-info-circle"></i></span>
+              </div>
+              <div class="_alert-message-box">
+                  <div class="_alert-subject _fs-14">Update Required</div>
+                  <div class="_alert-desc _fs-14">Your software requires an update to VER 6.90</div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="alert  _alert-success alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <div class="d-flex align-items-center">
+              <div class="_alert-ico align-self-start">
+                <span><i class='fas fa-check-circle'></i></span>
+              </div>
+              <div class="_alert-message-box">
+                  <div class="_alert-subject _fs-14">Success</div>
+                  <div class="_alert-desc _fs-14">Your project is saved successfully</div>
+              </div>
+            </div>
+          </div>
+          <div class="alert  _alert-danger alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <div class="d-flex align-items-center">
+              <div class="_alert-ico align-self-start">
+                <span><i class='fas fa-exclamation-triangle'></i></span>
+              </div>
+              <div class="_alert-message-box">
+                  <div class="_alert-subject _fs-14">Account Permanently Deleted</div>
+                  <div class="_alert-desc _fs-14">This user will no longer exist in this table Usr_904328ijk</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 300px;overflow: auto;">
+&ltdiv class="alert  _alert-informative alert-dismissible fade show"&gt
+&ltbutton type="button" class="close" data-dismiss="alert"&gt&times;&lt/button&gt
+&ltdiv class="d-flex align-items-center"&gt
+&ltdiv class="_alert-ico align-self-start"&gt
+&ltspan class=""&gt&lti class="fas fa-info-circle"&gt&lt/i&gt&lt/span&gt
+&lt/div&gt
+&ltdiv class="_alert-message-box"&gt
+&ltdiv class="_alert-subject _fs-14"&gtUpdate Required&lt/div&gt
+&ltdiv class="_alert-desc _fs-14"&gtYour software requires an update to VER 6.90&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+
+&ltdiv class="alert  _alert-success alert-dismissible fade show"&gt
+&ltbutton type="button" class="close" data-dismiss="alert"&gt&times;&lt/button&gt
+&ltdiv class="d-flex align-items-center"&gt
+&ltdiv class="_alert-ico align-self-start"&gt
+&ltspan&gt&lti class='fas fa-check-circle'&gt&lt/i&gt&lt/span&gt
+&lt/div&gt
+&ltdiv class="_alert-message-box"&gt
+&ltdiv class="_alert-subject _fs-14"&gtSuccess&lt/div&gt
+&ltdiv class="_alert-desc _fs-14"&gtYour project is saved successfully&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&ltdiv class="alert  _alert-danger alert-dismissible fade show"&gt
+&ltbutton type="button" class="close" data-dismiss="alert"&gt&times;&lt/button&gt
+&ltdiv class="d-flex align-items-center"&gt
+&ltdiv class="_alert-ico align-self-start"&gt
+&ltspan&gt&lti class='fas fa-exclamation-triangle'&gt&lt/i&gt&lt/span&gt
+&lt/div&gt
+&ltdiv class="_alert-message-box"&gt
+&ltdiv class="_alert-subject _fs-14"&gtAccount Permanently Deleted&lt/div&gt
+&ltdiv class="_alert-desc _fs-14"&gtThis user will no longer exist in this table Usr_904328ijk&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+          </div>
+  </div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Tooltips
+        </div>
+        <div class="card-body">
+        <button type="button" class="btn _rm-btn-lg-00 _primary-button mx-1 mb-2" data-toggle="tooltip" data-placement="top" title="While working fully remote, you might not be fully aware of safety!">Primary Tooltip</button>
+        <button type="button" class="btn btn-link _fs-18 mb-2 mr-2" data-toggle="tooltip" data-placement="bottom" title="While working fully remote, you might not be fully aware of safety!">Tooltip Bottom</button>
+        <!-- <button type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="bottom" title="While working fully remote, you might not be fully aware of safety!">Tooltip bottom</button>
+        <button type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="left" title="While working fully remote, you might not be fully aware of safety!">Tooltip left</button>
+        <button type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="right" title="While working fully remote, you might not be fully aware of safety!">Tooltip right</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="min-height: 150px;overflow: auto;">
+&ltbutton type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="top" title="Hooray!"&gtTooltip Top&lt/button&gt
+&ltbutton type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="bottom" title="Hooray!"&gtTooltip bottom&lt/button&gt
+&ltbutton type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="left" title="Hooray!"&gtTooltip left&lt/button&gt
+&ltbutton type="button" class="btn _primary-button" data-toggle="tooltip" data-placement="right" title="Hooray!"&gtTooltip right&lt/button&gt
+
+</pre>  
+              </div>
+            </div>
+          </div>
+      </div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Toast
+        </div>
+        <div class="card-body">
+          <div>
+            <button type="button" class="btn btn-warning btn-sm _primary-button mb-1" id="toatWarning">Warning</button>
+            <button type="button" class="btn btn-danger btn-sm _primary-button mb-1" id="toatError">Error</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+  &ltbutton type="button" class="btn btn-warning btn-sm _primary-button mb-1" id="toatWarning"&gtWarning&lt/button&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Text Box
+        </div>
+        <div class="card-body">
+          <div class="card mx-auto" style="width: 400px;"> 
+            <div class="card-body mx-auto">
+              <form action="/action_page.php" class="needs-validation" novalidate>
+                <div class="form-group">
+                  <input type="text" class="form-control _custom-form-control _form-size-md" id="fname" placeholder="Enter Full Name" name="fname" required>
+                </div>
+                <div class="form-group">
+                  <label class="_fs-12 _gery-3" for="uname">Full Name</label>
+                  <input type="text" class="form-control _custom-form-control _form-size-md" id="uname" placeholder="Enter username" name="uname" required>
+                  <div class="valid-feedback text-right">Valid.</div>
+                  <div class="invalid-feedback text-right">You need to fill this field <i class='ml-2 fas fa-exclamation-circle'></i></div>
+                </div>
+                <div class="form-group">
+                  <label class="_fs-12 _gery-3" for="uname">Email ID</label>
+                  <input type="email" class="form-control _custom-form-control _form-size-md" id="dState" value="ZZZZ" placeholder="Enter your email" name="uname" required>
+                  <div class="valid-feedback text-right">Valid.</div>
+                  <div class="invalid-feedback text-right">You need to fill this field <i class='ml-2 fas fa-exclamation-circle'></i></div>
+                </div>
+                <div class="row no-gutters" style="max-width: 330px;">
+                  <div class="col px-1">
+                    <button type="button" class="btn _btn-secondary mb-2 _rm-btn-block-lg-00">Cancel</button>
+                  </div>
+                  <div class="col px-1">
+                    <button type="submit" class="btn _rm-btn-block-lg-00 _primary-button mb-2">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre>
+&ltform action="/action_page.php" class="needs-validation" novalidate&gt
+&ltdiv class="form-group"&gt
+  &ltinput type="text" class="form-control _custom-form-control _form-size-md" id="fname" placeholder="Enter Full Name" name="fname" required&gt
+&lt/div&gt
+&ltdiv class="form-group"&gt
+  &ltlabel class="_fs-12 _gery-3" for="uname"&gtFull Name&lt/label&gt
+  &ltinput type="text" class="form-control _custom-form-control _form-size-md" id="uname" placeholder="Enter username" name="uname" required&gt
+  &ltdiv class="valid-feedback text-right"&gtValid.&lt/div&gt
+  &ltdiv class="invalid-feedback text-right"&gtYou need to fill this field &lti class='ml-2 fas fa-exclamation-circle'&gt&lt/i&gt&lt/div&gt
+&lt/div&gt
+&ltdiv class="form-group"&gt
+  &ltlabel class="_fs-12 _gery-3" for="uname"&gtEmail ID&lt/label&gt
+  &ltinput type="email" class="form-control _custom-form-control _form-size-md" id="dState" value="ZZZZ" placeholder="Enter your email" name="uname" required&gt
+  &ltdiv class="valid-feedback text-right"&gtValid.&lt/div&gt
+  &ltdiv class="invalid-feedback text-right"&gtYou need to fill this field &lti class='ml-2 fas fa-exclamation-circle'&gt&lt/i&gt&lt/div&gt
+&lt/div&gt
+&ltdiv class="row no-gutters" style="max-width: 330px;"&gt
+  &ltdiv class="col px-1"&gt
+    &ltbutton type="button" class="btn _btn-secondary mb-2 _rm-btn-block-lg-00"&gtCancel&lt/button&gt
+  &lt/div&gt
+  &ltdiv class="col px-1"&gt
+    &ltbutton type="submit" class="btn _rm-btn-block-lg-00 _primary-button mb-2"&gtSubmit&lt/button&gt
+  &lt/div&gt
+&lt/div&gt
+&lt/form&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Search Box
+        </div>
+        <div class="card-body">
+          <div class="input-group  _form-text-icon-left" style="width: 280px;">
+            <input type="text" class="form-control" id="searchBox" placeholder="Text goes here">
+            <span class=" _ip-form-text-ic-left">
+              <i class='fas _text-primary _fs-12'>&#xf002;</i>
+            </span>
+            <span class=" _ip-form-close-ic">
+              <i class='fas fa-times-circle _fs-12 _gery-2'></i>
+            </span>
+          </div>
+          <ul class="list-group mt-2 _fs-12" id="searchList" style="width: 280px;">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth item</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="input-group  _form-text-icon-left" style="width: 280px;"&gt
+&ltinput type="text" class="form-control" id="searchBox" placeholder="Text goes here"&gt
+&ltspan class=" _ip-form-text-ic-left"&gt
+&lti class='fas _text-primary _fs-12'&gt&#xf002;&lt/i&gt
+&lt/span&gt
+&ltspan class=" _ip-form-close-ic"&gt
+&lti class='fas fa-times-circle _fs-12 _gery-2'&gt&lt/i&gt
+&lt/span&gt
+&lt/div&gt
+&ltul class="list-group mt-2 _fs-12" id="searchList" style="width: 280px;"&gt
+&ltli class="list-group-item"&gtFirst item&lt/li&gt
+&ltli class="list-group-item"&gtSecond item&lt/li&gt
+&ltli class="list-group-item"&gtThird item&lt/li&gt
+&ltli class="list-group-item"&gtFourth item&lt/li&gt
+&lt/ul&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Checkboxes
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="Apple" name="Apple">
+              <label class="custom-control-label" for="Apple">Apple</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="Mango" name="Mango">
+              <label class="custom-control-label" for="Mango">Mango</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" disabled class="custom-control-input" id="Banana" name="Banana">
+              <label class="custom-control-label" for="Banana">Banana</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltform&gt
+&ltdiv class="custom-control custom-checkbox mb-2"&gt
+&ltinput type="checkbox" class="custom-control-input" id="Apple" name="Apple"&gt
+&ltlabel class="custom-control-label" for="Apple"&gtApple&lt/label&gt
+&lt/div&gt
+&ltdiv class="custom-control custom-checkbox mb-2"&gt
+&ltinput type="checkbox" class="custom-control-input" id="Mango" name="Mango"&gt
+&ltlabel class="custom-control-label" for="Mango"&gtMango&lt/label&gt
+&lt/div&gt
+&ltdiv class="custom-control custom-checkbox mb-2"&gt
+&ltinput type="checkbox" class="custom-control-input" id="Banana" name="Banana"&gt
+&ltlabel class="custom-control-label" for="Banana"&gtBanana&lt/label&gt
+&lt/div&gt
+&lt/form&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Radio Buttons
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Option 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Option 2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">Option 3</label>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltform&gt
+&ltdiv class="form-check form-check-inline"&gt
+&ltinput class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt
+&ltlabel class="form-check-label" for="inlineRadio1"&gtTomato&lt/label&gt
+&lt/div&gt
+&ltdiv class="form-check form-check-inline"&gt
+&ltinput class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt
+&ltlabel class="form-check-label" for="inlineRadio2"&gtCabbage&lt/label&gt
+&lt/div&gt
+&ltdiv class="form-check form-check-inline"&gt
+&ltinput class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled&gt
+&ltlabel class="form-check-label" for="inlineRadio3"&gtCarrot (disabled)&lt/label&gt
+&lt/div&gt
+
+&lt/form&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Toggle Switches
+        </div>
+        <div class="card-body">
+          <div>
+            <label class="_toogle-switch">
+              <input type="checkbox" id="toggleSwitches">
+              <span class="_toogle-slider round"></span>
+            </label>
+            <span class="_toggle-switch-text">OFF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv&gt
+&ltlabel class="_toogle-switch"&gt
+&ltinput type="checkbox" checked&gt
+&ltspan class="_toogle-slider round"&gt&lt/span&gt
+&lt/label&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>
+
+
+
+
+ 
+
+
+
+  
+
+
+
+<!-- Drop Down Menus -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+  
+
+<!-- <section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Logo Variations
+        </div>
+        <div class="card-body">
+          <div class="">
+            <img class="mb-3" src="./media/logos/Path 10765.png" alt=""><br>
+            <img class="mb-3" src="./media/logos/Path 10123.png" alt=""><br>
+            <img class="mb-3" src="./media/logos/Path 10115.png" alt=""><br>
+            <img class="mb-3" src="./media/logos/Path 10116.png" alt=""><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 100%;overflow: auto;">
+  &ltimg class="mb-3" src="./media/logos/Path 10765.png" alt=""&gt&ltbr&gt
+  &ltimg class="mb-3" src="./media/logos/Path 10123.png" alt=""&gt&ltbr&gt
+  &ltimg class="mb-3" src="./media/logos/Path 10115.png" alt=""&gt&ltbr&gt
+  &ltimg class="mb-3" src="./media/logos/Path 10116.png" alt=""&gt&ltbr&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section> -->
+
+
+
+
+
+
+
+
+  
+
+
+
+
+ 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Overflow Menu
+        </div>
+        <div class="card-body">
+          <div class="dropdown show">
+            <a href="#" class="btn _btn-overflowmenu mb-1" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class='fas fa-ellipsis-v'></i></a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="javascript:void(0)">Download as PDF</a>
+              <a class="dropdown-item" href="javascript:void(0)">Download as CSV</a>
+              <a class="dropdown-item" href="javascript:void(0)">XLS</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="dropdown show"&gt
+&lta href="#" class="btn _btn-icon-default _btn-outline-primary mb-1" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt&lti class='fas fa-ellipsis-v'&gt&lt/i&gt&lt/a&gt
+
+&ltdiv class="dropdown-menu" aria-labelledby="dropdownMenuLink"&gt
+&lta class="dropdown-item" href="#"&gtAction&lt/a&gt
+&lta class="dropdown-item" href="#"&gtAnother action&lt/a&gt
+&lta class="dropdown-item" href="#"&gtSomething else here&lt/a&gt
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Drop Down
+        </div>
+        <div class="card-body">
+          <div class="dropdown show">
+            <a class="btn _btn-dropdown-default dropdown-toggle _custom-dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Country</span>
+            </a>
+          
+            <div class="dropdown-menu _fs-12" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="javascript:void(0)">Austria</a>
+              <a class="dropdown-item" href="javascript:void(0)">Afghanistan</a>
+              <a class="dropdown-item" href="javascript:void(0)">Albania</a>
+              <a class="dropdown-item" href="javascript:void(0)">Algeria</a>
+              <a class="dropdown-item" href="javascript:void(0)">American Samoa</a>
+              <a class="dropdown-item" href="javascript:void(0)">Andorra</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="dropdown show"&gt
+&lta class="btn _btn-outline-primary dropdown-toggle _custom-dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="min-width: 200px;"&gt
+&ltspan&gtCountry&lt/span&gt
+&lt/a&gt
+
+&ltdiv class="dropdown-menu _fs-12" aria-labelledby="dropdownMenuLink"&gt
+&lta class="dropdown-item" href="javascript:void(0)"&gtAustria&lt/a&gt
+&lta class="dropdown-item" href="javascript:void(0)"&gtAfghanistan&lt/a&gt
+&lta class="dropdown-item" href="javascript:void(0)"&gtAlbania&lt/a&gt
+&lta class="dropdown-item" href="javascript:void(0)"&gtAlgeria&lt/a&gt
+&lta class="dropdown-item" href="javascript:void(0)"&gtAmerican Samoa&lt/a&gt
+&lta class="dropdown-item" href="javascript:void(0)"&gtAndorra&lt/a&gt
+
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Combo Box : 1
+        </div>
+        <div class="card-body">
+          <div class="mb-2">
+            <select id="example-combobox" class="_multiselect-custom" multiple="multiple" name="msList">
+              <optgroup label="Group 1">
+                <option value="11">Option 1.1</option>
+                <option value="12">Option 1.2</option>
+                <option value="13">Option 1.3</option>
+            </optgroup>
+            <optgroup label="Group 2">
+                <option value="21">Option 2.1</option>
+                <option value="22">Option 2.2</option>
+                <option value="23">Option 2.3</option>
+            </optgroup>
+            </select>
+            <div class="_multiselect-show-list d-none" id="multiShowList">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Language Picker
+        </div>
+        <div class="card-body">
+          <select class="selectpicker">
+          <option class="_fs-14" data-content='<span class="flag-icon flag-icon-us"></span>'></option>
+          <option class="_fs-14" data-content='<span class="flag-icon flag-icon-mx"></span>'></option>
+          
+        </select>
+          
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltselect class="selectpicker" data-width="fit"&gt
+&ltoption data-content='&ltspan class="flag-icon flag-icon-us"&gt&lt/span&gt En'&gtEnglish&lt/option&gt
+&ltoption  data-content='&ltspan class="flag-icon flag-icon-mx"&gt&lt/span&gt Es'&gtEspañol&lt/option&gt
+&lt/select&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+
+
+
+
+
+<section style="padding-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Loaders: Determinate
+        </div>
+        <div class="card-body">
+          <div class="_progress-w-info">
+            <p class="_primary-progress-status _progress-status">75% Completed</p>
+            <div class="progress my-2">
+              <div class="progress-bar w-75 _primary-progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="_progress-w-info">
+            <div class="_success-progress-status _progress-status">25% Completed</div>
+            <div class="progress my-2">
+              <div class="progress-bar w-25 _success-progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="_progress-w-info">
+            <div class="_danger-progress-status _progress-status">25% Completed</div>
+            <div class="progress my-2">
+              <div class="progress-bar w-50 _danger-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="_progress-w-info"&gt
+&ltp class="_primary-progress-status _progress-status"&gt75% Completed&lt/p&gt
+&ltdiv class="progress my-2"&gt
+&ltdiv class="progress-bar w-75 _primary-progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"&gt&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&ltdiv class="_progress-w-info"&gt
+&ltdiv class="_success-progress-status _progress-status"&gt25% Completed&lt/div&gt
+&ltdiv class="progress my-2"&gt
+&ltdiv class="progress-bar w-25 _success-progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+&ltdiv class="_progress-w-info"&gt
+&ltdiv class="_danger-progress-status _progress-status"&gt25% Completed&lt/div&gt
+&ltdiv class="progress my-2"&gt
+&ltdiv class="progress-bar w-50 _danger-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Loaders: Indeterminate
+        </div>
+        <div class="card-body">
+          <div class="d-inline-flex mb-3">
+            <div class="_spinner-dark mx-2"></div>
+          </div>
+          <div class="_infinite-loading-box mb-3">
+            <p>Primary Loading Data...</p>
+            <div class="_infinite-progress-bar">
+              <div class="_infinite-progress-bar-value _infinite-primary"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="d-inline-flex mb-3"&gt
+&ltdiv class="_spinner-dark mx-2"&gt&lt/div&gt
+&lt/div&gt
+&ltdiv class="_infinite-loading-box mb-3"&gt
+&ltp&gtPrimary Loading Data...&lt/p&gt
+&ltdiv class="_infinite-progress-bar"&gt
+&ltdiv class="_infinite-progress-bar-value _infinite-primary"&gt&lt/div&gt
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+              </div>
+            </div>
+    </div>
+    
+</div>
+</section>   
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+          Date picker
+        </div>
+        <div class="card-body">
+          <div>
+          <form>
+            <div class="form-group">
+              <label class="_form-label-14lite" for="usr">Date:</label>
+              <div class="input-group _form-date-picker" style="width:330px">
+                <input type="text" class="form-control _custom-form-control _candt-form" id="datePicker">
+                <span class=" _ip-group-date">
+                  <i style='font-size:16px' class='far'>&#xf073;</i>
+                </span>
+              </div>
+            </div>
+                <div class="form-group">
+                  <label class="_form-label-14lite" for="usr">Range Calender:</label>
+                  <div class="input-group _form-date-picker" style="width:330px">
+                    <input type="text" class="form-control _custom-form-control _candt-form" id="datePickerRange">
+                    <span class=" _ip-group-date">
+                      <i style='font-size:16px' class='far'>&#xf073;</i>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="_form-label-14lite" for="usr">Select multiple Dates:</label>
+                  <div class="input-group _form-date-picker" style="width:330px">
+                    <input type="text" class="form-control _custom-form-control _candt-form" id="datePickerMultiple">
+                    <span class=" _ip-group-date">
+                      <i style='font-size:16px' class='far'>&#xf073;</i>
+                    </span>
+                  </div>
+                </div>
+                
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="form-group"&gt
+&ltlabel class="_form-label-14lite" for="usr"&gtDate:&lt/label&gt
+&ltdiv class="input-group _form-date-picker"&gt
+&ltinput type="text" class="form-control" id="datePicker"&gt
+&ltspan class=" _ip-group-date"&gt
+&lti style='font-size:16px' class='far'&gt&#xf073;&lt/i&gt
+&lt/span&gt
+&lt/div&gt
+&lt/div&gt
+&ltdiv class="form-group"&gt
+&ltlabel class="_form-label-14lite" for="usr"&gtRange Calender:&lt/label&gt
+&ltdiv class="input-group _form-date-picker"&gt
+&ltinput type="text" class="form-control" id="datePickerRange"&gt
+&ltspan class=" _ip-group-date"&gt
+&lti style='font-size:16px' class='far'&gt&#xf073;&lt/i&gt
+&lt/span&gt
+&lt/div&gt
+&lt/div&gt
+&ltdiv class="form-group"&gt
+&ltlabel class="_form-label-14lite" for="usr"&gtSelect multiple Dates:&lt/label&gt
+&ltdiv class="input-group _form-date-picker"&gt
+&ltinput type="text" class="form-control" id="datePickerMultiple"&gt
+&ltspan class=" _ip-group-date"&gt
+&lti style='font-size:16px' class='far'&gt&#xf073;&lt/i&gt
+&lt/span&gt
+&lt/div&gt
+&lt/div&gt
+
+&lt/div&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+    
+</div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Time Picker
+        </div>
+        <div class="card-body">
+          <div>
+            <div class="form-group">
+              <label class="_form-label-14lite" for="usr">Time Picker:</label>
+              <div class="input-group _form-date-picker" style="width:330px">
+                <input type="text" class="form-control _custom-form-control _candt-form" id="timePicker">
+                <span class=" _ip-group-date">
+                  <i style='font-size:16px' class='far'>&#xf017;</i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+&ltdiv class="form-group"&gt
+&ltlabel class="_form-label-14lite" for="usr"&gtTime Picker:&lt/label&gt
+&ltdiv class="input-group _form-date-picker"&gt
+&ltinput type="text" class="form-control" id="timePicker"&gt
+&ltspan class=" _ip-group-date"&gt
+&lti style='font-size:16px' class='far'&gt&#xf017;&lt/i&gt
+&lt/span&gt
+&lt/div&gt
+&lt/div&gt
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+
+
+
+
+
+
+
+
+
+<!-- Toast Message -->
+<div class="toast toast-warning _custom-toast" data-autohide="true" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed; top:70px;right:30px">
+  <div class="_toast-body px-2 py-3 d-flex align-items-center ">
+    <i class='fas fa-exclamation-triangle pl-2 _fs-16 toast-warning-ico'></i>
+    <p class="_toast-message mb-0 _fs-14 px-4">Lorem ipsum dolor sit amet, consectetur</p>
+    <div class="ml-auto d-flex">
+      <a class="_fs-14 pr-4 _toast-undo _text-primary" href="javascript:void(0)">Undo</a>
+      <i class='fas fa-times _fs-14 _toast-close-icon pr-2 _cursor-pointer' data-dismiss="toast" aria-label="Close"></i>
+    </div>
+  </div>
+</div>
+
+<div class="toast toast-error _custom-toast" data-autohide="true" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed; top:70px;right:30px">
+  <div class="_toast-body px-2 py-3 d-flex align-items-center ">
+    <i class='fas fa-exclamation-circle pl-2 _fs-16 toast-error-ico'></i>
+    <p class="_toast-message mb-0 _fs-14 px-4">Lorem ipsum dolor sit amet, consectetur</p>
+    <div class="ml-auto d-flex">
+      <a class="_fs-14 pr-4 _toast-undo _text-primary" href="javascript:void(0)">Undo</a>
+      <i class='fas fa-times _fs-14 _toast-close-icon pr-2 _cursor-pointer' data-dismiss="toast" aria-label="Close"></i>
+    </div>
+  </div>
+</div>
+
+<!-- End Toast Messages -->
+
+
+     
+  
+      
+  
+      
+  
+      
+  
+  
+     
+  
+      
+  
+      
+  <script>
+    $(function () {
+        let container = $('#pagination');
+        container.pagination({
+            dataSource: [
+                {name: "hello1"},
+                {name: "hello2"},
+                {name: "hello3"},
+                {name: "hello4"},
+                {name: "hello5"},
+                {name: "hello6"},
+                {name: "hello7"},
+                {name: "hello8"},
+                {name: "hello9"},
+                {name: "hello10"},
+                {name: "hello11"},
+                {name: "hello12"},
+                {name: "hello13"},
+                {name: "hello14"},
+                {name: "hello15"},
+                {name: "hello16"},
+                {name: "hello17"},
+            ],
+            pageSize: 5,
+            showGoInput: true,
+            showGoButton: true,
+            callback: function (data, pagination) {
+                var dataHtml = '<ul>';
+
+                $.each(data, function (index, item) {
+                    dataHtml += '<li>' + item.name + '</li>';
+                });
+
+                dataHtml += '</ul>';
+
+                $("#data-container").html(dataHtml);
+            }
+        })
+    })
+
+    $("#toatWarning").click(function(){
+      $('.toast-warning').toast({delay: 5000});
+      $('.toast-warning').toast('show');
+    })
+    $("#toatError").click(function(){
+      $('.toast-error').toast({delay: 5000});
+      $('.toast-error').toast('show');
+    })
+    $(document).ready(function(){
+      
+      $("#searchBox").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#searchList li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+      $('#example-getting-started').multiselect({
+        buttonWidth: '200px'
+      });
+      $('#example-combobox').multiselect({
+        buttonWidth:'344px',
+        onChange: function(option, checked) {
+          var rr = $('#example-combobox :selected').length;
+          if (rr == 0) {
+              $("#multiShowList").addClass('d-none')
+          } else{
+            $("#multiShowList").removeClass('d-none')
+          }
+                // alert(option.length + ' options ' + (checked ? 'selected' : 'deselected'));
+                //var selelectedOption = $('#multiselect1 option:selected');
+                var getId = option.val();
+                $(this).each(function(){
+                  if(checked){
+                    console.log(getId)
+                    $('#multiShowList').append(`
+                   
+                    <button class="btn _btn-tags _btn-default-tags" data-id =`+ getId +`><span class="_btn-tags-text">`  + option.text() + `</span><span onclick="uncheckSelectBox(`+ getId +`,`+ option.length +`)"><i class="fas fa-times-circle" aria-hidden="true"></i></span></button>
+                    `)
+                  }
+                  else{
+                    
+                    $("._btn-default-tags[data-id=" + getId + "]").remove()
+                  }
+               
+                })
+            }
+       
+      });
+      
+      // $("option:selected").prop("selected", false)
+      $("#datePicker").flatpickr();
+      $("#datePickerRange").flatpickr({
+        mode: "range",
+        minDate: "today",
+        dateFormat: "Y-m-d",
+      });
+      $("#datePickerMultiple").flatpickr({
+        mode: "multiple",
+        dateFormat: "Y-m-d",
+      });
+      $("#timePicker").flatpickr({
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",
+        time_24hr: false
+      });
+      $('[data-toggle="tooltip"]').tooltip();   
+      $(function(){
+          $('.selectpicker').selectpicker();
+      });
+    });
+    
+
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    
+    $('#toggleSwitches').click(function() {
+      if ($(this).is(':checked')) {
+        $(this).closest('._toogle-switch').next('._toggle-switch-text').html('ON')
+      } else {
+        $(this).closest('._toogle-switch').next('._toggle-switch-text').html('OFF')
+      }
+    });
+
+    function uncheckSelectBox(y,n){
+        $("._btn-default-tags[data-id=" + y + "]").remove()
+        $('#example-combobox').multiselect('deselect', y);
+      }
+      $(".dropdown-menu .dropdown-item").on('click',function(){
+        var selText = $(this).text();
+        $(this).parents('.dropdown').find('._btn-dropdown-default').html(selText+' <span class="caret"></span>');
+      });
+  
+</script>
+</body>
+</html>

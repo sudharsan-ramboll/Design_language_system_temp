@@ -157,8 +157,15 @@ img._tags-image {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    min-width: 344px;
     height: 38px;
+    width: 100%;
+}
+._custom-dropdown{
+    min-width: 330px;
+    display: inline-block;
+}
+._custom-dropdown>.dropdown-menu{
+    width: 100%;
 }
 ._btn-dropdown-default{
     border:1px solid #C7C7C7;
@@ -250,7 +257,7 @@ background-color: #006FAD;
 ._dropdown-toggle-text:hover{
     z-index: 0 !important;
 }
-.dropdown-toggle::after {
+.dropdown-toggle-split.dropdown-toggle::after {
     display: none;
 }
 ._accordian .card-header:hover{
@@ -491,3 +498,107 @@ background-color: #006FAD;
       align-items: center;
   }  
 /* End Toggle Switch */
+/* ._custom-dropdown-toggle::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f077";
+} */
+
+/* Cards */
+.card-body{
+    padding: 20px 30px;
+    
+}
+._card-medium .card-text,._card-small .card-text,._card-image-hr-w-btn .card-text,._card-image-v .card-text, ._card-image-v-profile .card-text,.card-text{
+    color: #888888;
+    font-size: 14px;
+}
+._card-medium .card-title,._card-small .card-title {
+    margin-bottom: 0.55rem;
+}
+
+._card-cover {
+    background-size: cover;
+    background-position: bottom;
+}
+._card-image-hr-w-btn {
+    overflow: hidden;
+}
+.card .btn-link{
+    font-family: 'GothamRounded-Medium';
+}
+._card-profile-image {
+    margin-bottom: 87px;
+    height: 176px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+._card-profile-image ._card-profile-image-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 89px);
+}
+._card-profile-image ._card-profile-image-content img{
+    height: 132px;
+    width: 132px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+/* Small */
+._card-image-v-sm-profile ._card-profile-image {
+    margin-bottom: 87px;
+    height: 133px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+._card-profile-ct-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+._card-image-v-sm-profile ._card-profile-image ._card-profile-image-content {
+    position: absolute;
+    bottom: -90px;
+    left: 26%;
+}
+._card-image-v-sm-profile ._card-profile-image ._card-profile-image-content img,._card-profile-img{
+    height: 132px;
+    width: 132px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+/* End */
+._card-profile-image-content ._profile-name{
+    font-family: 'GothamRounded-Medium';
+    font-size: 16px;
+}
+._card-profile-image-content ._profile-job,._profile-job{
+    color: #BEBEBE;
+}
+._card-profile-image-ct-content.text-center {
+    margin: 40px 0px;
+}
+._card-image-hr-profile{
+    padding: 20px;
+}
+._card-image-hr-profile{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: top;
+}
+._card-img-top{
+    object-fit: cover;
+}
+/* End */

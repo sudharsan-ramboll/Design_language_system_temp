@@ -40,6 +40,7 @@ select.selectpicker {
   vertical-align: middle;
 }
 .bootstrap-select > .dropdown-toggle {
+  width: 100%;
   position: relative;
   text-align: right;
   white-space: nowrap;

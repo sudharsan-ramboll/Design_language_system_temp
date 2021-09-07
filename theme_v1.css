@@ -583,6 +583,7 @@ background-color: #006FAD;
 ._card-profile-image-content ._profile-name{
     font-family: 'GothamRounded-Medium';
     font-size: 16px;
+    padding-top: 8px;
 }
 ._card-profile-image-content ._profile-job,._profile-job{
     color: #BEBEBE;
@@ -601,4 +602,60 @@ background-color: #006FAD;
 ._card-img-top{
     object-fit: cover;
 }
+/* End */
+/* Search Autocomplete */
+
+  /*the container must be positioned relative:*/
+  .autocomplete {
+    position: relative;
+    /* display: inline-block; */
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  
+  
+  
+  .autocomplete-items {
+    position: absolute;
+    
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 115%;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 10px 20px #2C273814;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .autocomplete-items div {
+    padding: 3px 3px 3px 33px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 14px;
+    background-image: url(./media/icons/vectorpaint.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 11px;
+    background-size: 14px;
+}
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #F8F8F8; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
 /* End */

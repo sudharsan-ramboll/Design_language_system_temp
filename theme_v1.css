@@ -407,8 +407,11 @@ background-color: #006FAD;
 }
 .btn-lang-picker {
     background: white;
-    border: 1px solid #009DF0;
+    border: 1px solid #C7C7C7;
     border-radius: 5px;
+}
+.btn-lang-picker:hover{
+    border-color: #009DF0;
 }
 ._candt-form {
     height: 36px;
@@ -657,5 +660,16 @@ background-color: #006FAD;
   .autocomplete-active {
     background-color: DodgerBlue !important; 
     color: #ffffff; 
+  }
+  .bs-searchbox input[type="search"]{
+    line-height: 1;
+    padding-left: 35px !important;
+    border-radius: 10px;
+    background-image: url(./media/icons/searchBlue.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 14px;
+    background-size: 14px;
+    font-size: 14px;
   }
 /* End */

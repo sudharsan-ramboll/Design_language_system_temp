@@ -1560,7 +1560,7 @@ way where the user must be able to view it.
          Combo Box
         </div>
         <div class="card-body">
-          <select class="selectpicker" data-width="344px" data-live-search="true" title="Select country">
+          <select class="selectpicker" data-width="344px" data-size="5" data-live-search="true" title="Select country">
             <option>Austria</option>
             <option>Afghanistan</option>
             <option>Albania</option>
@@ -1571,6 +1571,48 @@ way where the user must be able to view it.
             <option>Russia</option>
           </select>
           
+        </div>
+      </div>
+      </div>
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card">
+        <div class="card-header _bg-code-header text-light">
+          <i class='fas fa-code' style='font-size:16px'></i>
+        </div>
+        <div class="card-body" >
+<pre style="height: 150px;overflow: auto;">
+
+
+</pre>  
+      </div>
+    </div>
+    </div>
+</section> 
+
+<section style="padding-bottom: 32px;border-bottom: 1px dotted; margin-bottom: 32px;">
+
+  <div class="row">
+    <div class="col-lg-6 mb-md-2 mb-lg-0">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-light">
+         Multi select
+        </div>
+        <div class="card-body">
+          <div class="mb-2">
+            <select id="example-getting-started" multiple="multiple">
+              <optgroup label="Languages" class="font-weight-bold _fs-14">
+                <option value="1-1">Node.js</option>
+                <option value="1-2">Go</option>
+                <option value="1-3">Python</option>
+            </optgroup>
+            <optgroup label="Size" class="font-weight-bold _fs-14">
+                <option value="2-1">Small</option>
+                <option value="2-2">Medium</option>
+                <option value="2-3">Large</option>
+                <option value="2-4">Extra Large</option>
+            </optgroup>
+          </select>
+          </div>
         </div>
       </div>
       </div>
@@ -1841,38 +1883,8 @@ way where the user must be able to view it.
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
       });
-      $('#example-getting-started').multiselect({
-        buttonWidth: '200px'
-      });
-      $('#example-combobox').multiselect({
-        buttonWidth:'344px',
-        onChange: function(option, checked) {
-          var rr = $('#example-combobox :selected').length;
-          if (rr == 0) {
-              $("#multiShowList").addClass('d-none')
-          } else{
-            $("#multiShowList").removeClass('d-none')
-          }
-                // alert(option.length + ' options ' + (checked ? 'selected' : 'deselected'));
-                //var selelectedOption = $('#multiselect1 option:selected');
-                var getId = option.val();
-                $(this).each(function(){
-                  if(checked){
-                    console.log(getId)
-                    $('#multiShowList').append(`
-                   
-                    <button class="btn _btn-tags _btn-default-tags" data-id =`+ getId +`><span class="_btn-tags-text">`  + option.text() + `</span><span onclick="uncheckSelectBox(`+ getId +`,`+ option.length +`)"><i class="fas fa-times-circle" aria-hidden="true"></i></span></button>
-                    `)
-                  }
-                  else{
-                    
-                    $("._btn-default-tags[data-id=" + getId + "]").remove()
-                  }
-               
-                })
-            }
-       
-      });
+      
+     
       
       // $("option:selected").prop("selected", false)
       $("#datePicker").flatpickr();
@@ -1894,6 +1906,17 @@ way where the user must be able to view it.
       $('[data-toggle="tooltip"]').tooltip();   
       $(function(){
           $('#langPicker').selectpicker();
+      });
+      $('#example-getting-started').multiselect({
+        nonSelectedText: 'Select category',
+        includeSelectAllOption: true,
+        selectAllValue: 'select-all-value',
+        includeResetOption: true,
+        resetText: "Clear all",
+        includeResetDivider: true,
+        buttonWidth: '344px',
+        buttonTextAlignment: 'left',
+        maxHeight: 200,
       });
     });
     

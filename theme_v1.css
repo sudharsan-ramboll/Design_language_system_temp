@@ -673,3 +673,23 @@ background-color: #006FAD;
     font-size: 14px;
   }
 /* End */
+
+/* Dropdown menu inner scroll */
+.dropdown-menu .inner::-webkit-scrollbar,.multiselect-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  .dropdown-menu .inner::-webkit-scrollbar-track,.multiselect-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+    border-radius: 10px;
+    background-color: white;
+  }
+   
+  /* Handle */
+  .dropdown-menu .inner::-webkit-scrollbar-thumb,.multiselect-container::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+
+/* End */
